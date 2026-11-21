@@ -1,0 +1,7 @@
+data/
+results/post_labels.csv
+
+__pycache__/
+.DS_Store
+Thumbs.db
+~$*
