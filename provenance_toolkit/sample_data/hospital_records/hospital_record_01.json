@@ -1,0 +1,20 @@
+{
+  "encounters": [
+    {
+      "date": "2025-08-14",
+      "type": "specialist visit"
+    },
+    {
+      "date": "2025-10-30",
+      "type": "follow-up visit"
+    },
+    {
+      "date": "2026-03-10",
+      "type": "specialist visit"
+    },
+    {
+      "date": "2026-03-16",
+      "type": "follow-up visit"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "encounters": [
+    {
+      "date": "2025-02-03",
+      "type": "well visit"
+    },
+    {
+      "date": "2026-01-06",
+      "type": "urgent care visit"
+    }
+  ]
+}

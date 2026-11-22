@@ -1,0 +1,13 @@
+{
+  "participant": "P-0001",
+  "encounters": [
+    {
+      "date": "2025-06-10",
+      "type": "placeholder visit"
+    },
+    {
+      "date": "2026-02-18",
+      "type": "placeholder visit"
+    }
+  ]
+}

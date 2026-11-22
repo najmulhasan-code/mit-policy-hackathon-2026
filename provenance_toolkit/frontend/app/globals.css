@@ -1,0 +1,2428 @@
+/* Colours: ink, greys and one blue. Spacing steps: 4, 8, 12, 16, 24, 32, 48. */
+
+:root {
+  color-scheme: light;
+  --ink: #14171a;
+  --muted: #59636e;
+  --faint: #7d8791;
+  --line: #e4e7ea;
+  --line-strong: #c6ccd2;
+  --rule: #a3acb5;
+  --wash: #f5f6f7;
+  --surface: #ffffff;
+  --blue: #0072b2;
+  --blue-dark: #005d92;
+  --blue-tint: #e9f2f8;
+  --canvas: #fafbfc;
+  --mono: Consolas, "SF Mono", Menlo, monospace;
+  --text-title: 22px;
+  --text-section: 15px;
+  --text-body: 14px;
+  --text-small: 12.5px;
+  --text-mono: 12.5px;
+  --radius: 4px;
+  --ease: 140ms ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--text-body);
+  line-height: 20px;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--blue);
+  text-underline-offset: 2px;
+  transition: color var(--ease);
+}
+
+a:hover {
+  color: var(--blue-dark);
+}
+
+svg {
+  flex: none;
+}
+
+.mono {
+  font-family: var(--mono);
+  font-size: var(--text-mono);
+}
+
+.quiet {
+  color: var(--muted);
+}
+
+.good {
+  color: var(--blue);
+}
+
+.bad {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.warn {
+  color: var(--muted);
+}
+
+.hidden-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+}
+
+/* Text for screen readers that stands in for a status shown by an icon. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+/* A label that wraps a hidden file input takes the focus outline when the input has keyboard focus. */
+label:has(.hidden-input:focus-visible) {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+/* Frame */
+
+.app {
+  display: grid;
+  grid-template-rows: 56px minmax(0, 1fr);
+  height: 100%;
+}
+
+.topbar {
+  display: flex;
+  align-items: stretch;
+  gap: 32px;
+  padding: 0 32px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-section);
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand:hover {
+  color: var(--ink);
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color var(--ease), border-color var(--ease);
+}
+
+.nav a:hover {
+  color: var(--ink);
+}
+
+.nav a[aria-current="page"] {
+  color: var(--ink);
+  border-bottom-color: var(--blue);
+}
+
+.count {
+  font-size: var(--text-small);
+  color: var(--faint);
+}
+
+/* A count that asks for attention, such as findings that are outdated. */
+.count.alert {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.who {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.who svg {
+  color: var(--muted);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  min-height: 0;
+}
+
+.work,
+.system {
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.work {
+  padding: 32px 32px 48px;
+}
+
+/* Headings */
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  min-height: 34px;
+}
+
+.heading h1 {
+  font-size: var(--text-title);
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+}
+
+.heading > .icon-button {
+  margin-left: -8px;
+}
+
+.heading-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+/* Sections */
+
+.block {
+  margin-top: 32px;
+}
+
+.block-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 24px;
+}
+
+.block-head h2 {
+  font-size: var(--text-section);
+  font-weight: 600;
+}
+
+.block-body {
+  padding-top: 12px;
+}
+
+.block-body.flush {
+  padding-top: 4px;
+}
+
+.block-body > p + p,
+.block-body > * + .form-row,
+.block-body > .form-row + *,
+.block-body > * + .actions {
+  margin-top: 16px;
+}
+
+.block-body > ul + p {
+  margin-top: 8px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px 48px;
+}
+
+/* Numbers across the top of a page */
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 48px;
+  margin-bottom: 24px;
+}
+
+.stat {
+  min-width: 96px;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+}
+
+.stat-label {
+  margin-top: 4px;
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+
+/* Status. A filled blue dot is a good state, a filled ink square a refusal or fault, an open ink square a state that waits. */
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-small);
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.tag::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--faint);
+}
+
+.tag.green,
+.tag.blue {
+  color: var(--blue);
+}
+
+.tag.green::before,
+.tag.blue::before {
+  background: var(--blue);
+}
+
+.tag.red,
+.tag.amber {
+  color: var(--ink);
+}
+
+.tag.red::before {
+  border-radius: 0;
+  background: var(--ink);
+}
+
+.tag.amber::before {
+  border-radius: 0;
+  background: none;
+  border: 1.5px solid var(--ink);
+}
+
+.state {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-small);
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.state.good {
+  color: var(--blue);
+}
+
+.state.bad {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.next {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.next.mine {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 32px;
+  margin: 0;
+  translate: -50% 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: min(520px, calc(100vw - 32px));
+  padding: 12px 16px;
+  color: #ffffff;
+  background: var(--ink);
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 0;
+  color: var(--line-strong);
+}
+
+.empty.small {
+  padding: 48px 0;
+}
+
+/* Lists with an icon in front */
+
+.marks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.marks li {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 4px 0;
+}
+
+.marks li > span:first-child {
+  display: flex;
+}
+
+.marks svg {
+  margin-top: 1px;
+}
+
+/* Tables */
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: middle;
+  padding: 10px 24px 10px 0;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+td.wrap {
+  white-space: normal;
+}
+
+/* A hash in a cell that wraps breaks at any character, so that it stays inside a narrow window. */
+td.mono.wrap,
+td.wrap .mono {
+  overflow-wrap: anywhere;
+}
+
+/* A date or id that opens a row takes only the width it needs. */
+td.mono:first-child {
+  width: 1%;
+}
+
+th {
+  font-weight: 400;
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+
+thead th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom-color: var(--line-strong);
+}
+
+/* A table of label and value pairs, with the labels in the first column. */
+th[scope="row"] {
+  width: 200px;
+}
+
+tr.row-link {
+  cursor: pointer;
+}
+
+tr.row-link td {
+  transition: background-color var(--ease);
+}
+
+tr.row-link:hover td {
+  background: var(--wash);
+}
+
+.id {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 13.5px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+a.id:hover {
+  color: var(--blue);
+}
+
+/* Forms */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 34px;
+  padding: 0 16px;
+  font: inherit;
+  font-size: 13.5px;
+  font-weight: 600;
+  border: 1px solid var(--blue);
+  border-radius: var(--radius);
+  background: var(--blue);
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color var(--ease), border-color var(--ease), color var(--ease);
+}
+
+.button:hover:not(:disabled) {
+  background: var(--blue-dark);
+  border-color: var(--blue-dark);
+  color: #ffffff;
+}
+
+.button.secondary,
+.button.warning {
+  background: var(--surface);
+  border-color: var(--line-strong);
+  color: var(--ink);
+}
+
+.button.secondary:hover:not(:disabled),
+.button.warning:hover:not(:disabled) {
+  background: var(--wash);
+  border-color: var(--faint);
+  color: var(--ink);
+}
+
+.button.warning {
+  border-color: var(--ink);
+}
+
+.button.warning:hover:not(:disabled) {
+  border-color: var(--ink);
+}
+
+.button:disabled {
+  background: var(--wash);
+  border-color: var(--line);
+  color: var(--faint);
+  cursor: not-allowed;
+}
+
+label,
+legend {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+select,
+input[type="text"],
+input[type="date"] {
+  font: inherit;
+  height: 34px;
+  padding: 0 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  max-width: 100%;
+  transition: border-color var(--ease);
+}
+
+select:hover,
+input[type="text"]:hover,
+input[type="date"]:hover {
+  border-color: var(--faint);
+}
+
+select:focus-visible,
+input[type="text"]:focus-visible,
+input[type="date"]:focus-visible {
+  border-color: var(--blue);
+  outline-offset: 0;
+}
+
+select:disabled,
+input[type="text"]:disabled,
+input[type="date"]:disabled {
+  background: var(--wash);
+  border-color: var(--line);
+  color: var(--faint);
+  cursor: not-allowed;
+}
+
+select.grow {
+  flex: 1;
+  min-width: 200px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 12px 16px;
+}
+
+fieldset.form-row {
+  align-items: center;
+  gap: 4px 24px;
+}
+
+/* A status beside an input sits on the centre line of the input. */
+.form-row > .tag {
+  height: 34px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: var(--text-body);
+  padding: 4px 0;
+}
+
+.choice input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: var(--blue);
+}
+
+.choice:has(input:disabled) {
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.who-asks {
+  margin-top: 24px;
+}
+
+/* Small square buttons that carry only an icon */
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color var(--ease), border-color var(--ease), color var(--ease);
+}
+
+.icon-button:hover:not(:disabled) {
+  color: var(--ink);
+  background: var(--wash);
+}
+
+.icon-button:disabled {
+  color: var(--line-strong);
+  border-color: var(--line);
+  cursor: not-allowed;
+}
+
+.icon-button.plain {
+  border-color: transparent;
+  background: none;
+}
+
+.icon-button.small {
+  width: 24px;
+  height: 24px;
+}
+
+/* The area that takes the files of a donation */
+
+.drop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 32px 16px;
+  color: var(--muted);
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: var(--text-body);
+  font-weight: 400;
+  transition: background-color var(--ease), border-color var(--ease), color var(--ease);
+}
+
+.drop:hover,
+.drop.over {
+  color: var(--blue);
+  border-color: var(--blue);
+  background: var(--blue-tint);
+}
+
+/* The same area once files are chosen: one quiet row under the table. */
+.drop.slim {
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px 12px;
+  margin: 8px 0 24px;
+  font-size: 14px;
+}
+
+/* Data flow. Positions across the canvas are percentages of its width, so the columns fill the space there is. */
+
+.flow-wrap {
+  overflow-x: auto;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--canvas);
+}
+
+.flow {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flow > svg {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.flow path {
+  fill: none;
+  stroke: var(--rule);
+  stroke-width: 1.25;
+  vector-effect: non-scaling-stroke;
+  transition: opacity var(--ease), stroke var(--ease);
+}
+
+.flow path.gone {
+  stroke-dasharray: 3 4;
+  stroke: var(--line-strong);
+}
+
+.flow path.bad {
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+
+/* The lines on the trace of the chosen node, and the lines off it. */
+.flow path.lit {
+  stroke: var(--blue);
+  stroke-width: 2;
+}
+
+.flow path.dim {
+  opacity: 0.25;
+}
+
+/* Stage names above the columns of the data flow */
+.flow-stage {
+  position: absolute;
+  top: 0;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--faint);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.node,
+.node.good,
+.node.bad,
+.node.warn {
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.node {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: opacity var(--ease), border-color var(--ease), background-color var(--ease), box-shadow var(--ease);
+}
+
+.node:hover {
+  border-color: var(--blue);
+}
+
+/* The chosen node, and the nodes off its trace. The rules for a fault, a deleted item and an outside holder come later and keep their own border and fill. */
+.node.focus {
+  border-color: var(--blue);
+  background: var(--blue-tint);
+  box-shadow: 0 0 0 1px var(--blue);
+}
+
+.node.dim {
+  opacity: 0.4;
+}
+
+.node.dim:hover,
+.node.dim:focus-visible {
+  opacity: 1;
+}
+
+.node-icon {
+  display: flex;
+  color: var(--muted);
+}
+
+.node-text {
+  display: block;
+  min-width: 0;
+}
+
+.node-title {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* The second line of a node: its detail at the left, its state at the right. */
+.node-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 18px;
+}
+
+.node-detail {
+  flex: 1;
+  min-width: 0;
+  font-size: 12px;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.node-detail.mono {
+  font-size: 11.5px;
+}
+
+.node-mark {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--muted);
+}
+
+/* The mark for protected health information */
+.phi {
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+
+.node.good .node-mark {
+  color: var(--blue);
+}
+
+.node.warn .node-mark {
+  color: var(--ink);
+}
+
+.node.bad,
+.node.bad:hover {
+  border: 1.5px solid var(--ink);
+  background: #eceef0;
+}
+
+.node.bad .node-mark,
+.node.bad .node-icon {
+  color: var(--ink);
+}
+
+.node.gone {
+  border-style: dashed;
+  background: var(--canvas);
+}
+
+.node.gone .node-title {
+  color: var(--faint);
+  text-decoration: line-through;
+}
+
+.node.gone .node-mark,
+.node.gone .node-icon,
+.node.gone .node-detail {
+  color: var(--faint);
+}
+
+.node.gone .phi {
+  color: var(--faint);
+}
+
+/* A holder outside the hospital, whose copy the hospital cannot check */
+.node.outside {
+  border-style: dotted;
+  border-width: 1.5px;
+  background: var(--canvas);
+}
+
+/* The record of the chosen node, and the record of the chosen ledger entry, under their diagrams */
+.flow-wrap + .table-wrap {
+  margin-top: 16px;
+}
+
+/* Findings */
+
+.bars {
+  display: grid;
+  margin-top: 12px;
+  grid-template-columns: max-content minmax(80px, 1fr) max-content max-content;
+  align-items: center;
+  gap: 8px 16px;
+}
+
+.bar-track {
+  height: 12px;
+  background: var(--wash);
+}
+
+.bar-fill {
+  display: block;
+  height: 100%;
+  min-width: 2px;
+  background: var(--blue);
+}
+
+.retired .bar-fill {
+  background: var(--faint);
+}
+
+.bar-value {
+  font-weight: 600;
+  text-align: right;
+}
+
+.inputs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inputs li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.inputs li:first-child {
+  padding-top: 0;
+}
+
+.inputs svg {
+  color: var(--faint);
+}
+
+.finding-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.finding-meta .with-icon {
+  gap: 4px;
+}
+
+/* Verification */
+
+.score {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.score-number,
+.score-number.good,
+.score-number.bad {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.segments {
+  display: flex;
+  flex: 1;
+  gap: 2px;
+  max-width: 320px;
+}
+
+.segments span {
+  flex: 1;
+  height: 6px;
+  background: var(--blue);
+}
+
+.segments .no {
+  background: var(--ink);
+}
+
+.checks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.checks li {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 0 8px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.checks li:last-child {
+  border-bottom: 0;
+}
+
+.check-mark {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  color: var(--blue);
+}
+
+.check-mark svg {
+  width: 16px;
+  height: 16px;
+}
+
+.check-mark.fail {
+  color: var(--ink);
+}
+
+.check-name {
+  font-weight: 600;
+}
+
+.check-detail {
+  grid-column: 2;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.checks li.failed .check-detail {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* Receipt */
+
+.receipt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px 32px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.receipt .with-icon {
+  font-size: 13px;
+}
+
+.code {
+  margin-top: 4px;
+  font-family: var(--mono);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+}
+
+.receipt .form-row {
+  align-items: center;
+  gap: 8px;
+}
+
+.receipt .form-row > .tag {
+  margin-left: 8px;
+}
+
+/* History of a donation */
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr) max-content max-content 16px;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.timeline li > span {
+  display: flex;
+}
+
+.timeline-icon {
+  color: var(--faint);
+}
+
+.timeline .timeline-text {
+  display: block;
+}
+
+/* Parts of a donation page */
+
+.tabs {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid var(--line);
+  overflow-x: auto;
+}
+
+.tabs button {
+  padding: 8px 0 10px;
+  margin-bottom: -1px;
+  font: inherit;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color var(--ease), border-color var(--ease);
+}
+
+.tabs button:hover {
+  color: var(--ink);
+}
+
+.tabs button[aria-selected="true"] {
+  color: var(--ink);
+  border-bottom-color: var(--blue);
+}
+
+.tabs button:focus-visible {
+  outline-offset: -2px;
+}
+
+.tab-body {
+  padding-top: 24px;
+}
+
+.tab-body > .block:first-child {
+  margin-top: 0;
+}
+
+/* Right column: the proof panel */
+
+.system {
+  border-left: 1px solid var(--line);
+  padding-bottom: 32px;
+}
+
+.panel-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 56px;
+  padding: 0 24px;
+  font-size: var(--text-section);
+  font-weight: 600;
+  border-bottom: 1px solid var(--line);
+}
+
+.panel-title > svg {
+  color: var(--muted);
+}
+
+.panel-side {
+  margin-left: auto;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.panel-block {
+  padding: 0 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.panel-block summary,
+.panel-block h2.plain-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+/* A long note at the right of a section title is cut short, and the title stays on one line. */
+.panel-block summary .panel-side {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.panel-block summary {
+  cursor: pointer;
+  list-style: none;
+  transition: color var(--ease);
+}
+
+.panel-block summary::-webkit-details-marker {
+  display: none;
+}
+
+.panel-block summary:hover {
+  color: var(--blue-dark);
+}
+
+.panel-block summary .good,
+.panel-block summary .bad {
+  display: flex;
+  width: 16px;
+}
+
+.panel-block summary .panel-side {
+  font-size: var(--text-small);
+}
+
+.panel-block summary .panel-side.mono {
+  font-size: 12px;
+}
+
+/* The sign at the end of a folding section: a plus when it is closed, a minus when it is open. */
+.panel-block summary::after {
+  content: "+";
+  width: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  color: var(--faint);
+}
+
+.panel-block[open] summary::after {
+  content: "\2212";
+}
+
+.panel-block[open] {
+  padding-bottom: 16px;
+}
+
+.panel-block[open] summary {
+  margin-bottom: 4px;
+}
+
+.plain-title > svg {
+  width: 16px;
+  color: var(--muted);
+}
+
+.plain-title .icon-button {
+  margin-right: -6px;
+}
+
+.panel-block .file-name {
+  font-size: 13px;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+section.panel-block > .file-name {
+  margin-top: 4px;
+}
+
+section.panel-block > :last-child:not(h2) {
+  margin-bottom: 16px;
+}
+
+.strip {
+  display: grid;
+  grid-template-columns: repeat(32, 1fr);
+  gap: 1px;
+  height: 8px;
+}
+
+.system .root {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--muted);
+  word-break: break-all;
+}
+
+.proof-rows {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.proof-rows li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.proof-rows li span:nth-child(2) {
+  flex: 1;
+}
+
+.proof-rows .good,
+.proof-rows .bad {
+  display: flex;
+}
+
+.files,
+.chain,
+.ladder {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.files li {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+}
+
+.files li:first-child {
+  border-top: 0;
+  padding-top: 4px;
+}
+
+.files li:last-child {
+  padding-bottom: 0;
+}
+
+.file-icon {
+  color: var(--faint);
+  display: flex;
+}
+
+.file-meta {
+  color: var(--muted);
+  font-size: 11.5px;
+}
+
+.file-bad .file-name {
+  font-weight: 700;
+}
+
+.file-gone .file-name {
+  color: var(--faint);
+  text-decoration: line-through;
+}
+
+.file-gone .file-meta {
+  color: var(--faint);
+}
+
+/* The log as a chain: a rule down the left with one square per entry. */
+
+.chain {
+  max-height: 480px;
+  overflow-y: auto;
+  padding: 4px 0 0 3px;
+}
+
+.chain li {
+  position: relative;
+  padding: 0 0 8px 16px;
+  border-left: 1px solid var(--line-strong);
+}
+
+.chain li::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 7px;
+  width: 7px;
+  height: 7px;
+  background: var(--blue);
+}
+
+.chain li:last-child {
+  padding-bottom: 0;
+}
+
+.chain li.link-bad {
+  border-left-color: var(--ink);
+}
+
+.chain li.link-bad::before {
+  background: var(--ink);
+}
+
+.chain li.link-doubt::before {
+  background: var(--surface);
+  border: 1px solid var(--faint);
+}
+
+.chain button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2px 8px 4px;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color var(--ease);
+}
+
+.chain button:hover {
+  background: var(--wash);
+}
+
+.chain button[aria-pressed="true"] {
+  background: var(--blue-tint);
+}
+
+.chain button:focus-visible {
+  outline-offset: -2px;
+}
+
+.chain-head {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font-size: 13px;
+}
+
+.chain-head .quiet {
+  font-size: var(--text-small);
+}
+
+.chain-index {
+  min-width: 20px;
+  font-family: var(--mono);
+  color: var(--faint);
+  font-size: 12px;
+}
+
+.chain-action {
+  font-weight: 600;
+}
+
+.chain-hash {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 28px;
+  color: var(--muted);
+  font-size: 11.5px;
+}
+
+.chain .state {
+  padding-left: 28px;
+}
+
+/* One entry folded up to the ledger root, one step per row. */
+
+.ladder {
+  padding: 4px 0 0 3px;
+}
+
+.ladder li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 12px 24px;
+  border-left: 1px solid var(--line-strong);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.ladder li::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--faint);
+}
+
+.ladder li:last-child {
+  padding-bottom: 0;
+  border-left-color: transparent;
+}
+
+.ladder-op {
+  color: var(--muted);
+}
+
+.ladder .reaches .ladder-op {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.ladder .reaches::before {
+  background: var(--blue);
+}
+
+.ladder .misses .ladder-op {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.ladder .misses::before {
+  border-radius: 0;
+  background: var(--ink);
+}
+
+/* Start page: one panel per role, each in its own colour. The header opens the role, and each action opens its own page. */
+
+.doors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1180px;
+  margin: 56px auto 0;
+  padding: 0 24px;
+}
+
+.door-family {
+  --tone: #0072b2;
+  --tone-tint: #e6f0f7;
+}
+
+.door-study {
+  --tone: #b4500a;
+  --tone-tint: #f7ece3;
+}
+
+.door-auditor {
+  --tone: #0b6e6b;
+  --tone-tint: #e3f0ef;
+}
+
+.door {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(22, 25, 29, 0.06);
+  cursor: default;
+}
+
+.door-head {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  padding: 28px 24px 22px;
+  overflow: hidden;
+  color: #ffffff;
+  font: inherit;
+  text-align: left;
+  background: var(--tone);
+  border: 0;
+  cursor: pointer;
+  transition: filter var(--ease);
+}
+
+.door-head:hover:not(:disabled) {
+  filter: brightness(0.93);
+}
+
+.door-ghost {
+  position: absolute;
+  top: -8px;
+  right: -14px;
+  display: flex;
+  opacity: 0.16;
+}
+
+.door-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: #ffffff;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.door-name {
+  position: relative;
+  display: block;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.door-can {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  flex: 1;
+  align-content: start;
+  width: 100%;
+  padding: 18px;
+  color: var(--ink);
+}
+
+.door-can > button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 60px;
+  padding: 0 16px;
+  color: var(--ink);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: left;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: var(--tone-tint);
+  cursor: pointer;
+  transition: border-color var(--ease), background-color var(--ease), transform var(--ease);
+}
+
+.door-can > button svg {
+  color: var(--tone);
+}
+
+.door-can > button:hover:not(:disabled) {
+  border-color: var(--tone);
+  background: #ffffff;
+  transform: translateY(-1px);
+}
+
+.door-can > button:focus-visible,
+.door-head:focus-visible {
+  outline: 3px solid var(--tone);
+  outline-offset: 2px;
+}
+
+.door-can > button:disabled,
+.door-head:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+/* The ledger drawn as a tree of hashes */
+
+.ledger-root {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+  word-break: break-all;
+}
+
+.ledger-root > span:first-child {
+  display: flex;
+}
+
+.tree {
+  display: block;
+  margin: 0 auto;
+}
+
+.tree line {
+  stroke: var(--rule);
+  stroke-width: 1.25;
+}
+
+.tree line.on {
+  stroke: var(--blue);
+  stroke-width: 2;
+}
+
+.tree-node {
+  outline: none;
+}
+
+.tree-node rect:not(.hit) {
+  fill: var(--surface);
+  stroke: var(--line-strong);
+  transition: stroke var(--ease), fill var(--ease);
+}
+
+.tree-node text {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  text-anchor: middle;
+  fill: var(--ink);
+}
+
+.tree-node text.cap {
+  font-family: inherit;
+  font-size: 11px;
+  fill: var(--muted);
+}
+
+.tree-node.leaf {
+  cursor: pointer;
+}
+
+.tree-node.leaf:hover rect:not(.hit) {
+  stroke: var(--blue);
+}
+
+/* The chosen entry and the boxes on its path to the root */
+.tree-node.on rect:not(.hit) {
+  fill: var(--blue-tint);
+  stroke: var(--blue);
+  stroke-width: 1.5;
+}
+
+.tree-node.on text.cap {
+  fill: var(--ink);
+}
+
+.tree-node.root rect:not(.hit) {
+  fill: var(--blue);
+  stroke: var(--blue);
+}
+
+.tree-node.root text {
+  fill: #ffffff;
+}
+
+.tree-node.sibling rect:not(.hit) {
+  stroke: var(--ink);
+  stroke-dasharray: 3 3;
+}
+
+/* The area of a leaf that takes the pointer. With keyboard focus it carries the focus outline. */
+.tree-node rect.hit {
+  fill: transparent;
+  stroke: none;
+}
+
+.tree-node:focus-visible rect.hit {
+  stroke: var(--blue);
+  stroke-width: 2;
+}
+
+/* The band under the leaves that names each participant's entries */
+.tree-band line {
+  stroke: var(--rule);
+  stroke-width: 2;
+}
+
+.tree-band text {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  text-anchor: middle;
+  fill: var(--muted);
+}
+
+.tree-band.on line {
+  stroke: var(--blue);
+}
+
+.tree-band.on text {
+  fill: var(--blue);
+  font-weight: 600;
+}
+
+/* Narrow windows: the proof panel moves below the page. */
+
+@media (max-width: 1100px) {
+  html,
+  body,
+  .app {
+    height: auto;
+  }
+  .app {
+    grid-template-rows: auto auto;
+  }
+  .columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .work,
+  .system {
+    overflow: visible;
+  }
+  .system {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+  .topbar {
+    flex-wrap: wrap;
+    gap: 0 24px;
+    padding: 0 16px;
+  }
+  .brand,
+  .nav a,
+  .topbar-right {
+    min-height: 48px;
+  }
+  .work {
+    padding: 24px 16px 48px;
+  }
+  .panel-title,
+  .panel-block {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* The ledger by dataset: the list of datasets beside the chosen dataset, and the tree under both */
+
+.ledger-layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 36px;
+  align-items: start;
+}
+
+.dataset-group-head {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  padding-top: 10px;
+  font-size: 12px;
+  color: var(--faint);
+}
+
+.dataset-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 2px 12px;
+  padding: 8px 12px;
+  border-radius: 2px;
+  color: var(--ink);
+  text-decoration: none;
+  transition: background-color var(--ease);
+}
+
+.dataset-row:hover {
+  color: var(--ink);
+  background: var(--wash);
+}
+
+.dataset-row[aria-current="true"] {
+  background: var(--blue-tint);
+  box-shadow: inset 2px 0 0 var(--blue);
+}
+
+.dataset-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.dataset-row[aria-current="true"] .dataset-name {
+  font-weight: 600;
+}
+
+.dataset-row .tag {
+  font-weight: 400;
+}
+
+.ledger-detail > .block:first-child {
+  margin-top: 0;
+}
+
+.ledger-detail .block-head {
+  justify-content: flex-start;
+}
+
+/* The chosen entry of the trail */
+table.trail tr.on td {
+  background: var(--blue-tint);
+}
+
+table.trail tr.on td:first-child {
+  box-shadow: inset 2px 0 0 var(--blue);
+}
+
+table.trail td:first-child,
+table.trail th:first-child {
+  padding-left: 12px;
+}
+
+table.trail th,
+table.trail td {
+  padding-right: 16px;
+}
+
+table.trail th:last-child,
+table.trail td:last-child {
+  padding-right: 0;
+}
+
+table.trail td.wrap {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+table.relatives td:first-child {
+  width: 110px;
+}
+
+tr.row-link:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: -2px;
+}
+
+.entry-proof {
+  margin-top: 16px;
+}
+
+/* In the tree, the entries of the chosen dataset and their paths to the root are drawn in blue, the rest of the tree in light grey. */
+.tree line.lit {
+  stroke: var(--blue);
+}
+
+.tree line.dim {
+  stroke: var(--line);
+}
+
+.tree-node.lit rect:not(.hit) {
+  stroke: var(--blue);
+}
+
+.tree-node.leaf.lit rect:not(.hit) {
+  fill: var(--blue-tint);
+}
+
+.tree-node.dim rect:not(.hit) {
+  stroke: var(--line);
+}
+
+.tree-node.dim text {
+  fill: var(--faint);
+}
+
+@media (max-width: 1300px) {
+  .ledger-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+}
+
+/* The study ledger, folded under the chosen dataset. Its summary is one row: the name, the number of entries, the root and its mark. */
+
+.study-ledger {
+  margin-top: 48px;
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line);
+}
+
+.study-ledger[open] {
+  padding-bottom: 8px;
+  border-bottom: 0;
+}
+
+.study-ledger summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  cursor: pointer;
+  list-style: none;
+  transition: color var(--ease);
+}
+
+.study-ledger summary::-webkit-details-marker {
+  display: none;
+}
+
+.study-ledger summary:hover h2 {
+  color: var(--blue-dark);
+}
+
+.study-ledger summary h2 {
+  font-size: var(--text-section);
+  font-weight: 600;
+}
+
+.study-ledger summary .good,
+.study-ledger summary .bad {
+  display: flex;
+}
+
+.study-ledger summary::after {
+  content: "+";
+  width: 12px;
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  color: var(--faint);
+}
+
+.study-ledger[open] summary::after {
+  content: "\2212";
+}
+
+.study-ledger[open] summary {
+  margin-bottom: 4px;
+}
+
+/* In the tree of one dataset every box belongs to the dataset, and the chosen entry's path is the heavier one. */
+.dataset-tree .tree-node.root.on rect:not(.hit) {
+  fill: var(--blue);
+}
+
+/* The record of the chosen dataset, as a few small lines under its name */
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 28px;
+  margin: 8px 0 0;
+  font-size: var(--text-small);
+}
+
+.facts > div {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+}
+
+.facts > div.line {
+  flex-basis: 100%;
+}
+
+.facts dt {
+  color: var(--faint);
+  white-space: nowrap;
+}
+
+.facts dd {
+  margin: 0;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.facts dd.mono,
+.facts dd .mono,
+.facts dd .id {
+  font-size: 12px;
+}
+
+.ledger-detail .ledger-root {
+  margin-bottom: 12px;
+  font-size: var(--text-small);
+}
+
+/* In the study tree, the boxes away from the chosen dataset are drawn faintly. */
+.study-ledger .tree-node.dim text {
+  fill: var(--line-strong);
+}
+
+.study-ledger .tree line.lit {
+  stroke: var(--rule);
+}
+
+.study-ledger .tree-node.lit:not(.on) rect:not(.hit) {
+  stroke: var(--rule);
+  fill: var(--surface);
+}
+
+/* File names of a donation in the donations table, one per line, each with its state mark. */
+
+.file-names {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.file-names li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.file-names .gone {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.pip {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 1px;
+  background: var(--faint);
+}
+
+.pip.ok {
+  background: var(--blue);
+}
+
+.pip.no {
+  background: var(--ink);
+}
+
+.pip.off {
+  background: none;
+  border: 1px solid var(--faint);
+}
+
+/* The interface by file. In the list, each row is a donated file, and the rows of one donation sit together with a rule after the last. */
+
+a.file-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+a.file-name:hover {
+  color: var(--blue);
+}
+
+a.file-name.gone {
+  font-weight: 400;
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+tr.row-link.joined td {
+  padding-bottom: 3px;
+  border-bottom: 0;
+}
+
+tr.row-link:not(.lead) td {
+  padding-top: 3px;
+}
+
+.stat.minor {
+  align-self: flex-end;
+  min-width: 0;
+}
+
+.stat.minor .stat-number {
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--muted);
+}
+
+/* The head of a donation page: the chosen file, then the participant and the number of files, quietly. Under it, the row of files: state mark, name and platform, the chosen file marked. */
+
+.heading .donor {
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+
+.heading a.donor {
+  text-decoration: none;
+}
+
+.heading a.donor:hover {
+  color: var(--blue);
+}
+
+.heading.with-files {
+  margin-bottom: 12px;
+}
+
+.file-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.file-switch a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  margin-bottom: -1px;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  font-size: 13px;
+  color: var(--ink);
+  text-decoration: none;
+  transition: background-color var(--ease), color var(--ease);
+}
+
+.file-switch a:hover {
+  color: var(--ink);
+  background: var(--wash);
+}
+
+.file-switch a[aria-current="true"] {
+  color: var(--ink);
+  font-weight: 600;
+  background: var(--blue-tint);
+  border-bottom-color: var(--blue);
+}
+
+.file-platform {
+  font-weight: 400;
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+
+/* The file a table row or a history entry is about, and the rows about the chosen file. */
+
+td.lead-cell,
+.timeline-file {
+  font-weight: 600;
+}
+
+.timeline-file {
+  margin-right: 10px;
+}
+
+tr.chosen td {
+  background: var(--blue-tint);
+}
+
+tr.chosen td:first-child {
+  box-shadow: inset 2px 0 0 var(--blue);
+  padding-left: 10px;
+}
+
+.inputs a.input-file {
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.inputs a.input-file:hover {
+  color: var(--blue);
+}
+
+.inputs a.input-file.gone {
+  font-weight: 400;
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.empty-text {
+  margin-top: 12px;
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+
+/* A quiet button written as text, for a small action inside a list row. */
+
+.text-button {
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--blue);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.text-button:hover {
+  text-decoration: underline;
+}
+
+/* Each role keeps the colour of its panel on the start page as the accent of its screens. */
+
+.role-study {
+  --blue: #b4500a;
+  --blue-dark: #8f3f07;
+  --blue-tint: #f7ece3;
+}
+
+.role-auditor {
+  --blue: #0b6e6b;
+  --blue-dark: #085553;
+  --blue-tint: #e3f0ef;
+}
+
+/* Withdrawals page: the choice of who asks sits beside the button, on one line. */
+
+select.asker {
+  width: 156px;
+  min-width: 0;
+}
+
+table.withdrawals th,
+table.withdrawals td {
+  padding-right: 14px;
+}
+
+table.withdrawals th:last-child,
+table.withdrawals td:last-child {
+  padding-right: 0;
+  text-align: right;
+}
+
+/* The state of a file that no longer matches its record, written beside its name in the files list. */
+
+.file-fault {
+  margin-left: 10px;
+  padding: 1px 7px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 3px;
+  background: var(--ink);
+}

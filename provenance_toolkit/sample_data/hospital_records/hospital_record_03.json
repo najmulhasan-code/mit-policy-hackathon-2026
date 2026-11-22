@@ -1,0 +1,12 @@
+{
+  "encounters": [
+    {
+      "date": "2025-09-06",
+      "type": "specialist visit"
+    },
+    {
+      "date": "2026-02-28",
+      "type": "well visit"
+    }
+  ]
+}

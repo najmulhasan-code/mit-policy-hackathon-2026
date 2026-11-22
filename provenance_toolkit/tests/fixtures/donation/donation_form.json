@@ -1,0 +1,33 @@
+{
+  "participant": "P-0001",
+  "files": [
+    {
+      "file": "chatgpt_export.json",
+      "platform": "ChatGPT",
+      "holder": "OpenAI",
+      "modality": "text",
+      "exported": "2026-11-02",
+      "export_method": "account data export",
+      "account_holder": "participant"
+    },
+    {
+      "file": "characterai_export.json",
+      "platform": "Character.AI",
+      "holder": "Character Technologies",
+      "modality": "text",
+      "exported": "2026-11-02",
+      "export_method": "account data export",
+      "account_holder": "participant"
+    },
+    {
+      "file": "uploaded_image_0001.png",
+      "platform": "ChatGPT",
+      "holder": "OpenAI",
+      "modality": "image",
+      "exported": "2026-11-02",
+      "export_method": "account data export",
+      "account_holder": "participant"
+    }
+  ],
+  "completeness": "Participant reports deleting some conversations before the export. The export is not a complete record of the account."
+}

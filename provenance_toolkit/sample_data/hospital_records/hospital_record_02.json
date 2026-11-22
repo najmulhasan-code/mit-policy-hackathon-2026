@@ -1,0 +1,16 @@
+{
+  "encounters": [
+    {
+      "date": "2025-05-16",
+      "type": "urgent care visit"
+    },
+    {
+      "date": "2025-07-10",
+      "type": "specialist visit"
+    },
+    {
+      "date": "2026-07-04",
+      "type": "urgent care visit"
+    }
+  ]
+}

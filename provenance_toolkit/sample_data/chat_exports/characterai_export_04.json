@@ -1,0 +1,1213 @@
+{
+  "platform": "Character.AI",
+  "exported": "2026-11-02",
+  "conversations": [
+    {
+      "id": "characterai-04-0001",
+      "character": "Placeholder character 1",
+      "started": "2024-12-02",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 1."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 1."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0002",
+      "character": "Placeholder character 3",
+      "started": "2024-12-09",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 2."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 2."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 2."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 2."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 2."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 2."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0003",
+      "character": "Placeholder character 3",
+      "started": "2024-12-12",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 3."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 3."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 3."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0004",
+      "character": "Placeholder character 4",
+      "started": "2024-12-28",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 4. My page is https://example.org/u/account04/413."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 4."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 4."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 4."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 4."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 4."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0005",
+      "character": "Placeholder character 2",
+      "started": "2024-12-28",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 5."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 5."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 5."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 5."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 5."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 5."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 7 of conversation 5."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 8 of conversation 5."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0006",
+      "character": "Placeholder character 1",
+      "started": "2025-01-01",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 6."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 6."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 6."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 6."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 6."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 6."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0007",
+      "character": "Placeholder character 1",
+      "started": "2025-01-08",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 7."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 7."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 7."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0008",
+      "character": "Placeholder character 4",
+      "started": "2025-02-06",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 8."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 8."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 8."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 8."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0009",
+      "character": "Placeholder character 1",
+      "started": "2025-02-10",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 9."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 9."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 9."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 9."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 9."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 9."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 7 of conversation 9."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0010",
+      "character": "Placeholder character 2",
+      "started": "2025-03-04",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 10."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 10."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 10."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 10."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 10."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 10."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 7 of conversation 10."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 8 of conversation 10."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0011",
+      "character": "Placeholder character 3",
+      "started": "2025-03-12",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 11."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 11."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 11."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 11."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 11."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 11."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0012",
+      "character": "Placeholder character 3",
+      "started": "2025-03-25",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 12."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 12."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 12."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 12."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0013",
+      "character": "Placeholder character 5",
+      "started": "2025-04-07",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 13."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 13."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0014",
+      "character": "Placeholder character 1",
+      "started": "2025-04-12",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 14."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 14."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 14."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 14."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 14."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0015",
+      "character": "Placeholder character 5",
+      "started": "2025-05-11",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 15."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 15."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 15."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 15."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 15."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0016",
+      "character": "Placeholder character 3",
+      "started": "2025-06-05",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 16."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 16."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 16."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 16."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 16."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0017",
+      "character": "Placeholder character 5",
+      "started": "2025-06-12",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 17."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 17."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0018",
+      "character": "Placeholder character 4",
+      "started": "2025-06-13",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 18."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 18."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 18."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 18."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0019",
+      "character": "Placeholder character 2",
+      "started": "2025-07-26",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 19. Write to account04.user99@example.org."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 19."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 19."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 19."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 19."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 19."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 7 of conversation 19."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0020",
+      "character": "Placeholder character 4",
+      "started": "2025-08-05",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 20. My page is https://example.org/u/account04/495."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 20."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0021",
+      "character": "Placeholder character 1",
+      "started": "2025-09-01",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 21."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 21."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 21."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 21."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 21."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0022",
+      "character": "Placeholder character 1",
+      "started": "2025-09-19",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 22."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 22."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 22."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 22."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 22."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 22."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 7 of conversation 22."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 8 of conversation 22."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0023",
+      "character": "Placeholder character 5",
+      "started": "2025-09-22",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 23. Call me on 617-555-0103."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 23."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 23."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 23."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 23."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 23."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 7 of conversation 23."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0024",
+      "character": "Placeholder character 3",
+      "started": "2025-10-12",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 24."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 24."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 24."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 24."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0025",
+      "character": "Placeholder character 3",
+      "started": "2025-10-26",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 25."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 25."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 25."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 25."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 25."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0026",
+      "character": "Placeholder character 3",
+      "started": "2025-11-14",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 26."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 26."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 26."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 26."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 26."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 26."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0027",
+      "character": "Placeholder character 3",
+      "started": "2025-11-17",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 27."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 27."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 27."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 27."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 27."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 27."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0028",
+      "character": "Placeholder character 5",
+      "started": "2025-12-21",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 28."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 28."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 28."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 28."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 28."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0029",
+      "character": "Placeholder character 3",
+      "started": "2026-01-04",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 29. Call me on 617-555-0194."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 29."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 29."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0030",
+      "character": "Placeholder character 5",
+      "started": "2026-04-16",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 30."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 30."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 30."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 30."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 30."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0031",
+      "character": "Placeholder character 4",
+      "started": "2026-04-20",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 31."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 31."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0032",
+      "character": "Placeholder character 2",
+      "started": "2026-04-27",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 32. Call me on 617-555-0168."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 32."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 32."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 32."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 32."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 32."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 7 of conversation 32."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 8 of conversation 32."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0033",
+      "character": "Placeholder character 3",
+      "started": "2026-04-30",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 33."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 33."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 33."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 33."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 33."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 33."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 7 of conversation 33."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0034",
+      "character": "Placeholder character 4",
+      "started": "2026-05-02",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 34."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 34."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 34."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0035",
+      "character": "Placeholder character 1",
+      "started": "2026-05-15",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 35."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 35."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 35."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 35."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 35."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 35."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 7 of conversation 35."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 8 of conversation 35."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0036",
+      "character": "Placeholder character 1",
+      "started": "2026-06-15",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 36."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 36."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 36."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 36."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 36."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 36."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0037",
+      "character": "Placeholder character 4",
+      "started": "2026-06-20",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 37."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 37."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0038",
+      "character": "Placeholder character 4",
+      "started": "2026-08-02",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 38."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 38."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0039",
+      "character": "Placeholder character 5",
+      "started": "2026-08-03",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 39."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 39."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 39."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 39."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 39."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 39."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0040",
+      "character": "Placeholder character 5",
+      "started": "2026-09-14",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 40."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 40."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 40."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 40."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 40."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0041",
+      "character": "Placeholder character 4",
+      "started": "2026-10-08",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 41."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 41."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0042",
+      "character": "Placeholder character 2",
+      "started": "2026-10-10",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 42."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 42."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0043",
+      "character": "Placeholder character 5",
+      "started": "2026-10-15",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 43."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 43."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 43."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 43."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 43."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 43."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 7 of conversation 43."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0044",
+      "character": "Placeholder character 5",
+      "started": "2026-10-17",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 44."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 44."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 44."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 44."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 44."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 44."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 7 of conversation 44."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 8 of conversation 44."
+        }
+      ]
+    },
+    {
+      "id": "characterai-04-0045",
+      "character": "Placeholder character 3",
+      "started": "2026-10-26",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 45."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 45."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 45."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 45."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 45."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 45."
+        }
+      ]
+    }
+  ]
+}

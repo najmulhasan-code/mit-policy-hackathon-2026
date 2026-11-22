@@ -1,0 +1,878 @@
+{
+  "platform": "ChatGPT",
+  "exported": "2026-11-02",
+  "conversations": [
+    {
+      "id": "chatgpt-0005",
+      "started": "2024-11-06",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 5."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 5."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 5."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0020",
+      "started": "2024-11-27",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 20."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 20."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 20."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0013",
+      "started": "2025-01-20",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 13."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 13."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 13."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 13."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 13."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0014",
+      "started": "2025-01-21",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 14."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 14."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 14."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 14."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0035",
+      "started": "2025-03-01",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 35."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 35."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 35."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 35."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 35."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0015",
+      "started": "2025-04-03",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 15."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 15."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0006",
+      "started": "2025-04-15",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 6."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 6."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 6."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 6."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0008",
+      "started": "2025-04-19",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 8."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 8."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 8."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 8."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 8."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 8."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0022",
+      "started": "2025-04-30",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 22."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 22."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 22."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0021",
+      "started": "2025-05-21",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 21."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 21."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 21."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 21."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 21."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 21."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0030",
+      "started": "2025-06-14",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 30."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 30."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 30."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 30."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 30."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 30."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0016",
+      "started": "2025-06-26",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 16."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 16."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 16."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0012",
+      "started": "2025-07-10",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 12."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 12."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 12."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 12."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 12."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0023",
+      "started": "2025-07-29",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 23."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 23."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 23."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 23."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 23."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 23."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0002",
+      "started": "2025-08-16",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 2."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 2."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 2."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 2."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0040",
+      "started": "2025-09-16",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 40."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 40."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0004",
+      "started": "2025-10-13",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 4."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 4."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0007",
+      "started": "2025-10-26",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 7."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 7."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 7."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0010",
+      "started": "2025-10-27",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 10."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 10."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 10."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 10."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0018",
+      "started": "2025-10-27",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 18."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 18."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 18."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 18."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 18."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 18."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0009",
+      "started": "2025-11-09",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 9."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 9."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 9."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 9."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 9."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0017",
+      "started": "2025-11-16",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 17."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 17."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0025",
+      "started": "2025-11-16",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 25."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 25."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 25."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 25."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0026",
+      "started": "2025-11-30",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 26."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 26."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 26."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 26."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 26."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0038",
+      "started": "2025-12-08",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 38."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 38."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0028",
+      "started": "2026-01-18",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 28."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 28."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 28."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 28."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0039",
+      "started": "2026-02-17",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 39."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 39."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 39."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 39."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0032",
+      "started": "2026-02-24",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 32."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 32."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 32."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 32."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 32."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 32."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0033",
+      "started": "2026-02-28",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 33."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 33."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 33."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 33."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 33."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0034",
+      "started": "2026-03-10",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 34."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 34."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 34."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 34."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 34."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0029",
+      "started": "2026-04-17",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 29."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 29."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0001",
+      "started": "2026-04-25",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 1."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 1."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 1."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0027",
+      "started": "2026-06-22",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 27."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 27."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 27."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 27."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 27."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0036",
+      "started": "2026-06-26",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 36."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 36."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 36."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 36."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0011",
+      "started": "2026-07-11",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 11."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 11."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0003",
+      "started": "2026-07-18",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 3."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 3."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0019",
+      "started": "2026-08-23",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 19."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 19."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 19."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 19."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 19."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0031",
+      "started": "2026-10-10",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 31."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 31."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 31."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0037",
+      "started": "2026-10-13",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 37."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 37."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-0024",
+      "started": "2026-10-31",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Placeholder user message 1 of conversation 24."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 2 of conversation 24."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 3 of conversation 24."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 4 of conversation 24."
+        },
+        {
+          "role": "user",
+          "text": "Placeholder user message 5 of conversation 24."
+        },
+        {
+          "role": "assistant",
+          "text": "Placeholder assistant message 6 of conversation 24."
+        }
+      ]
+    }
+  ]
+}

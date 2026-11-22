@@ -1,0 +1,40 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "status": "completed",
+        "type": [
+          {
+            "text": "urgent care visit"
+          }
+        ],
+        "actualPeriod": {
+          "start": "2026-01-09"
+        },
+        "period": {
+          "start": "2026-01-09"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "status": "completed",
+        "type": [
+          {
+            "text": "follow-up visit"
+          }
+        ],
+        "actualPeriod": {
+          "start": "2026-07-21"
+        },
+        "period": {
+          "start": "2026-07-21"
+        }
+      }
+    }
+  ]
+}

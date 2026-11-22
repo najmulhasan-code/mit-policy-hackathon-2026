@@ -1,7 +1,5 @@
 # Dataset analysis
 
-Team 18 (Praxis), MIT Policy Hackathon 2026
-
 Descriptive analysis of Reddit posts about generative AI and health, written by teenagers and parents. The scripts count which chatbot platforms the posts name, which health topics they mention, and the ages the authors state.
 
 ## Structure

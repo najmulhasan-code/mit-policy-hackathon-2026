@@ -1,0 +1,22 @@
+{
+  "participant": "P-0001",
+  "study_protocol": "EXAMPLE-PROTOCOL-0001",
+  "parental_permission": {
+    "given": true,
+    "date": "2026-11-05"
+  },
+  "child_assent": {
+    "given": true,
+    "date": "2026-11-05"
+  },
+  "participant_turns_18": "2029-03-14",
+  "permitted_uses": [
+    "linkage to the health record for this study",
+    "analysis by named study staff"
+  ],
+  "prohibited_uses": [
+    "training or fine-tuning of any model",
+    "sharing outside the study team",
+    "commercial use"
+  ]
+}

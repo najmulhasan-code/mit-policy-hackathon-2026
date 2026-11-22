@@ -1,0 +1,21 @@
+{
+  "study_protocol": "EXAMPLE-PROTOCOL-0001",
+  "study_name": "Chatbot use and adolescent health outcomes",
+  "permitted_uses": [
+    "linkage to the health record for this study",
+    "analysis by named study staff"
+  ],
+  "prohibited_uses": [
+    "training or fine-tuning of any model",
+    "sharing outside the study team",
+    "commercial use"
+  ],
+  "platforms": {
+    "ChatGPT": "OpenAI",
+    "Character.AI": "Character Technologies",
+    "Gemini": "Google",
+    "Snapchat My AI": "Snap",
+    "Meta AI": "Meta",
+    "Other": "Not stated"
+  }
+}
