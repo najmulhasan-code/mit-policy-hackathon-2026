@@ -117,7 +117,6 @@ export type Waiting = { id: string; submitted: string; completeness: string; con
 /** The study's settings, read from study_protocol.json. */
 export type Protocol = {
   study_protocol: string;
-  study_name: string;
   permitted_uses: string[];
   prohibited_uses: string[];
   platforms: Record<string, string>;
